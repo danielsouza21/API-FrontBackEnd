@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="index.css">
+<body >
+    <main>
+        <h1>
+            Users from API
+        </h1>
+        <h2 id="apibackend">
+        </h2>
+
+    </main>
+</body>
+
+<footer>
+    <h1 id="footer1">
+        Out_test:
+    </h1>
+</footer>
+</html>
+
+<script>
+
+    async function getContent(id_set){
+        try {
+            const response = await fetch("http://localhost:3030") //endereço da API
+            const data = await response.json()  //formata resposta da consulta
+            show(data,id_set)
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
+    async function show(users,id_set){
+        let output = ''
+
+        for(let user of users){
+            output += `<li>${user.name}</li>`
+        }
+
+        document.getElementById(id_set).innerHTML = output;
+    }
+
+    getContent("apibackend")    //busca do back-end
+
+</script>
