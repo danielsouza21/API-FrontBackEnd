@@ -18,6 +18,12 @@ Promise - Async/await
 Try/catch
 Mostrando resposta na tela
 
+# Back-End
+
+Acessando outra API online via 'axios'
+
+Usando destructing para acessar dados
+
 --//--
 
 Run aplication: npm start (sem nodemon: node server.js)
