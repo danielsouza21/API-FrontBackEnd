@@ -28,17 +28,17 @@ Try/catch
 
 Mostrando resposta na tela
 
-# Back-End
+## Back-End
 
 Acessando outra API online via 'axios'
 
 Usando destructing para acessar dados
 
---//--
+#Run aplication:
 
-Run aplication: npm start (sem nodemon: node server.js)
+> npm start (sem nodemon: node server.js)
 
-Endereço de aplicação: [http://localhost:3030/[]
+Endereço de aplicação: [http://localhost:3030/]
 
 -> nodemon: package.json - start script - "nodemon server.js"
 
