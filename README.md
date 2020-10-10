@@ -34,7 +34,7 @@ Acessando outra API online via 'axios'
 
 Usando destructing para acessar dados
 
-#Run aplication:
+# Run aplication:
 
 > npm start (sem nodemon: node server.js)
 
